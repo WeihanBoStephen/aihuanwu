@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <include layout="@layout/login_top" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/hint" />
+    <com.zt.agw.view.widget.image.XCRoundImageView
+        android:id="@+id/img_head"
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        android:src="@drawable/head"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_horizontal" />
+    <LinearLayout
+        android:id="@+id/lnear"
+        android:layout_below="@+id/img_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp">
+        <EditText
+            android:id="@+id/et_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_editview"
+            android:lines="1"
+            android:textSize="16dp"
+            android:inputType="number"
+            android:textColor="@color/hint"
+            android:hint="@string/phone" />
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_editview"
+            android:lines="1"
+            android:inputType="textPassword"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/hint"
+            android:hint="@string/password" />
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textSize="23dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:textColor="#56a6d4"
+        android:text="@string/forget_password"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"/>
+</LinearLayout>

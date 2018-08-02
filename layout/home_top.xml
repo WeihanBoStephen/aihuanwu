@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/orange">
+
+    <LinearLayout
+        android:id="@+id/search_ln"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="25dp">
+
+        <ImageView
+            android:id="@+id/search_iv"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/search" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/city_ln"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/same_city"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/pull_down_iv"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/pull_down"
+            android:layout_marginLeft="@dimen/d10"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/add_ln"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/add_iv"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/add" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background">
+    <include
+        android:id="@+id/include"
+        layout="@layout/home_top"/>
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frameMenu"
+        android:layout_below="@+id/include" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:orientation="horizontal" >
+
+            <!-- 发现 -->
+
+            <FrameLayout
+                android:id="@+id/layout_discover"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/image_discover"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top|center"
+                    android:src="@drawable/skin_tabbar_icon_discover_select"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"/>
+            </FrameLayout>
+
+            <!-- 消息 -->
+
+            <FrameLayout
+                android:id="@+id/layout_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/image_message"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top|center"
+                    android:src="@drawable/skin_tabbar_icon_message_select"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"/>
+            </FrameLayout>
+
+            <!-- 我的 -->
+
+            <FrameLayout
+                android:id="@+id/layout_mine"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/image_mine"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top|center"
+                    android:src="@drawable/skin_tabbar_icon_mine_select"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@android:color/black" >
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>
